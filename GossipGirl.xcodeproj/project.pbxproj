@@ -17,6 +17,11 @@
 		B128C091220DB750003436CC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C090220DB750003436CC /* UIColor+Extension.swift */; };
 		B128C095220DB904003436CC /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C094220DB904003436CC /* MainController.swift */; };
 		B128C099220DC4CF003436CC /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C098220DC4CF003436CC /* UIImageView+Extension.swift */; };
+		B128C09B220DC5B3003436CC /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C09A220DC5B3003436CC /* CustomTabBarController.swift */; };
+		B128C09F220DC6BF003436CC /* PeopleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C09E220DC6BF003436CC /* PeopleTableController.swift */; };
+		B128C0A1220DC704003436CC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A0220DC704003436CC /* ProfileController.swift */; };
+		B128C0A3220DC72C003436CC /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A2220DC72C003436CC /* SettingController.swift */; };
+		B128C0A5220DC773003436CC /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A4220DC773003436CC /* ChatController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		B128C090220DB750003436CC /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B128C094220DB904003436CC /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		B128C098220DC4CF003436CC /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B128C09A220DC5B3003436CC /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		B128C09E220DC6BF003436CC /* PeopleTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableController.swift; sourceTree = "<group>"; };
+		B128C0A0220DC704003436CC /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		B128C0A2220DC72C003436CC /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		B128C0A4220DC773003436CC /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				B128C087220DB5AC003436CC /* LoginController.swift */,
+				B128C09A220DC5B3003436CC /* CustomTabBarController.swift */,
 				B128C094220DB904003436CC /* MainController.swift */,
+				B128C09E220DC6BF003436CC /* PeopleTableController.swift */,
+				B128C0A0220DC704003436CC /* ProfileController.swift */,
+				B128C0A2220DC72C003436CC /* SettingController.swift */,
+				B128C0A4220DC773003436CC /* ChatController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,12 +283,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B128C0A5220DC773003436CC /* ChatController.swift in Sources */,
+				B128C0A3220DC72C003436CC /* SettingController.swift in Sources */,
 				B128C099220DC4CF003436CC /* UIImageView+Extension.swift in Sources */,
+				B128C09B220DC5B3003436CC /* CustomTabBarController.swift in Sources */,
 				B128C088220DB5AC003436CC /* LoginController.swift in Sources */,
 				B128C074220DB1CA003436CC /* AppDelegate.swift in Sources */,
 				B128C08F220DB6FE003436CC /* LoginController+Extension.swift in Sources */,
+				B128C0A1220DC704003436CC /* ProfileController.swift in Sources */,
 				B128C091220DB750003436CC /* UIColor+Extension.swift in Sources */,
 				B128C095220DB904003436CC /* MainController.swift in Sources */,
+				B128C09F220DC6BF003436CC /* PeopleTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
