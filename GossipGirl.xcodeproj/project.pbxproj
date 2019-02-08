@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36D327E75152D2375719AF7F /* Pods_GossipGirl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80F7B47AA6346660791C6E /* Pods_GossipGirl.framework */; };
 		B128C074220DB1CA003436CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C073220DB1CA003436CC /* AppDelegate.swift */; };
 		B128C076220DB1CA003436CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C075220DB1CA003436CC /* ViewController.swift */; };
 		B128C079220DB1CA003436CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B128C077220DB1CA003436CC /* Main.storyboard */; };
 		B128C07B220DB1CA003436CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B128C07A220DB1CA003436CC /* Assets.xcassets */; };
 		B128C07E220DB1CA003436CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B128C07C220DB1CA003436CC /* LaunchScreen.storyboard */; };
+		B128C086220DB1FB003436CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B128C085220DB1FB003436CC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B27F21D95BA3AE5AAC12041 /* Pods-GossipGirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipGirl.debug.xcconfig"; path = "Target Support Files/Pods-GossipGirl/Pods-GossipGirl.debug.xcconfig"; sourceTree = "<group>"; };
+		8F80F7B47AA6346660791C6E /* Pods_GossipGirl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GossipGirl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipGirl.release.xcconfig"; path = "Target Support Files/Pods-GossipGirl/Pods-GossipGirl.release.xcconfig"; sourceTree = "<group>"; };
 		B128C070220DB1CA003436CC /* GossipGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GossipGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B128C073220DB1CA003436CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B128C075220DB1CA003436CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		B128C07A220DB1CA003436CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B128C07D220DB1CA003436CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B128C07F220DB1CA003436CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B128C085220DB1FB003436CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D327E75152D2375719AF7F /* Pods_GossipGirl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E3BCA6A12B8B8C63DB2068C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B27F21D95BA3AE5AAC12041 /* Pods-GossipGirl.debug.xcconfig */,
+				967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B128C067220DB1CA003436CC = {
 			isa = PBXGroup;
 			children = (
 				B128C072220DB1CA003436CC /* GossipGirl */,
 				B128C071220DB1CA003436CC /* Products */,
+				4E3BCA6A12B8B8C63DB2068C /* Pods */,
+				DFA9594853923EE6AC779151 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,17 @@
 				B128C07A220DB1CA003436CC /* Assets.xcassets */,
 				B128C07C220DB1CA003436CC /* LaunchScreen.storyboard */,
 				B128C07F220DB1CA003436CC /* Info.plist */,
+				B128C085220DB1FB003436CC /* GoogleService-Info.plist */,
 			);
 			path = GossipGirl;
+			sourceTree = "<group>";
+		};
+		DFA9594853923EE6AC779151 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F80F7B47AA6346660791C6E /* Pods_GossipGirl.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B128C082220DB1CA003436CC /* Build configuration list for PBXNativeTarget "GossipGirl" */;
 			buildPhases = (
+				3309B8998F8728285B055042 /* [CP] Check Pods Manifest.lock */,
 				B128C06C220DB1CA003436CC /* Sources */,
 				B128C06D220DB1CA003436CC /* Frameworks */,
 				B128C06E220DB1CA003436CC /* Resources */,
+				609949742F562D1AC723E80D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				B128C07E220DB1CA003436CC /* LaunchScreen.storyboard in Resources */,
+				B128C086220DB1FB003436CC /* GoogleService-Info.plist in Resources */,
 				B128C07B220DB1CA003436CC /* Assets.xcassets in Resources */,
 				B128C079220DB1CA003436CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3309B8998F8728285B055042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GossipGirl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		609949742F562D1AC723E80D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GossipGirl/Pods-GossipGirl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GossipGirl/Pods-GossipGirl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B128C06C220DB1CA003436CC /* Sources */ = {
@@ -280,6 +366,7 @@
 		};
 		B128C083220DB1CA003436CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B27F21D95BA3AE5AAC12041 /* Pods-GossipGirl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +385,7 @@
 		};
 		B128C084220DB1CA003436CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
