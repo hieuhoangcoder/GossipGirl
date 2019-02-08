@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		36D327E75152D2375719AF7F /* Pods_GossipGirl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F80F7B47AA6346660791C6E /* Pods_GossipGirl.framework */; };
 		B128C074220DB1CA003436CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C073220DB1CA003436CC /* AppDelegate.swift */; };
-		B128C076220DB1CA003436CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C075220DB1CA003436CC /* ViewController.swift */; };
-		B128C079220DB1CA003436CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B128C077220DB1CA003436CC /* Main.storyboard */; };
 		B128C07B220DB1CA003436CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B128C07A220DB1CA003436CC /* Assets.xcassets */; };
 		B128C07E220DB1CA003436CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B128C07C220DB1CA003436CC /* LaunchScreen.storyboard */; };
 		B128C086220DB1FB003436CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B128C085220DB1FB003436CC /* GoogleService-Info.plist */; };
@@ -22,8 +20,6 @@
 		967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GossipGirl.release.xcconfig"; path = "Target Support Files/Pods-GossipGirl/Pods-GossipGirl.release.xcconfig"; sourceTree = "<group>"; };
 		B128C070220DB1CA003436CC /* GossipGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GossipGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B128C073220DB1CA003436CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B128C075220DB1CA003436CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B128C078220DB1CA003436CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B128C07A220DB1CA003436CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B128C07D220DB1CA003436CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B128C07F220DB1CA003436CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +44,6 @@
 				3B27F21D95BA3AE5AAC12041 /* Pods-GossipGirl.debug.xcconfig */,
 				967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				B128C073220DB1CA003436CC /* AppDelegate.swift */,
-				B128C075220DB1CA003436CC /* ViewController.swift */,
-				B128C077220DB1CA003436CC /* Main.storyboard */,
 				B128C07A220DB1CA003436CC /* Assets.xcassets */,
 				B128C07C220DB1CA003436CC /* LaunchScreen.storyboard */,
 				B128C07F220DB1CA003436CC /* Info.plist */,
@@ -155,7 +148,6 @@
 				B128C07E220DB1CA003436CC /* LaunchScreen.storyboard in Resources */,
 				B128C086220DB1FB003436CC /* GoogleService-Info.plist in Resources */,
 				B128C07B220DB1CA003436CC /* Assets.xcassets in Resources */,
-				B128C079220DB1CA003436CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B128C076220DB1CA003436CC /* ViewController.swift in Sources */,
 				B128C074220DB1CA003436CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +220,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B128C077220DB1CA003436CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B128C078220DB1CA003436CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B128C07C220DB1CA003436CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
