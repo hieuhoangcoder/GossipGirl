@@ -12,7 +12,7 @@ import SVProgressHUD
 
 extension LoginController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func registerPressed() {
+    func registerTapped() {
         
         SVProgressHUD.show()
         guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text else {
@@ -33,9 +33,9 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
             
             
             let imageName = UUID().uuidString
-            let storageRef = Storage.storage().reference().child("profile.pictures").child("\(imageName).jpg")
+            let storageRef = Storage.storage().reference().child("profile-pictures").child("\(imageName).jpg")
             
-            if let profileImage = self.profileImageView.image, let uploadData = profileImage.jpegData(compressionQuality: 0.1) {
+            if let profileImage = self.profileImageView.image, let uploadData = profileImage.jpegData(compressionQuality: 0.01) {
                 
                 storageRef.putData(uploadData, metadata: nil, completion: { (_, err) in
                     
@@ -73,7 +73,8 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
             }
             
             SVProgressHUD.dismiss()
-            
+            let user = User(dictionary: values)
+            self.mainController?.setupNavBarWithUser(user)
             self.dismiss(animated: true, completion: nil)
             
         })

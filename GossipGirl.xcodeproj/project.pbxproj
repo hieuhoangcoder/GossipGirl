@@ -22,6 +22,10 @@
 		B128C0A1220DC704003436CC /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A0220DC704003436CC /* ProfileController.swift */; };
 		B128C0A3220DC72C003436CC /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A2220DC72C003436CC /* SettingController.swift */; };
 		B128C0A5220DC773003436CC /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A4220DC773003436CC /* ChatController.swift */; };
+		B128C0A7220DCC5C003436CC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A6220DCC5C003436CC /* UserCell.swift */; };
+		B128C0A9220DCC76003436CC /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0A8220DCC76003436CC /* MessageCell.swift */; };
+		B128C0AB220DCCD8003436CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0AA220DCCD8003436CC /* User.swift */; };
+		B128C0AD220DCCE1003436CC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128C0AC220DCCE1003436CC /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,11 @@
 		B128C0A0220DC704003436CC /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		B128C0A2220DC72C003436CC /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		B128C0A4220DC773003436CC /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		B128C0A6220DCC5C003436CC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B128C0A8220DCC76003436CC /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		B128C0AA220DCCD8003436CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B128C0AC220DCCE1003436CC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B1F95BC1220DD75E00FAF8D6 /* GossipGirl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GossipGirl.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,7 @@
 		B128C072220DB1CA003436CC /* GossipGirl */ = {
 			isa = PBXGroup;
 			children = (
+				B1F95BC1220DD75E00FAF8D6 /* GossipGirl.entitlements */,
 				B128C089220DB652003436CC /* View */,
 				B128C08A220DB663003436CC /* Model */,
 				B128C08B220DB669003436CC /* Controller */,
@@ -100,6 +110,8 @@
 		B128C089220DB652003436CC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B128C0A6220DCC5C003436CC /* UserCell.swift */,
+				B128C0A8220DCC76003436CC /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +119,8 @@
 		B128C08A220DB663003436CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B128C0AA220DCCD8003436CC /* User.swift */,
+				B128C0AC220DCCE1003436CC /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +203,11 @@
 				TargetAttributes = {
 					B128C06F220DB1CA003436CC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -287,11 +306,15 @@
 				B128C0A3220DC72C003436CC /* SettingController.swift in Sources */,
 				B128C099220DC4CF003436CC /* UIImageView+Extension.swift in Sources */,
 				B128C09B220DC5B3003436CC /* CustomTabBarController.swift in Sources */,
+				B128C0A9220DCC76003436CC /* MessageCell.swift in Sources */,
 				B128C088220DB5AC003436CC /* LoginController.swift in Sources */,
+				B128C0AB220DCCD8003436CC /* User.swift in Sources */,
 				B128C074220DB1CA003436CC /* AppDelegate.swift in Sources */,
 				B128C08F220DB6FE003436CC /* LoginController+Extension.swift in Sources */,
 				B128C0A1220DC704003436CC /* ProfileController.swift in Sources */,
+				B128C0A7220DCC5C003436CC /* UserCell.swift in Sources */,
 				B128C091220DB750003436CC /* UIColor+Extension.swift in Sources */,
+				B128C0AD220DCCE1003436CC /* Message.swift in Sources */,
 				B128C095220DB904003436CC /* MainController.swift in Sources */,
 				B128C09F220DC6BF003436CC /* PeopleTableController.swift in Sources */,
 			);
@@ -432,9 +455,11 @@
 			baseConfigurationReference = 3B27F21D95BA3AE5AAC12041 /* Pods-GossipGirl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GossipGirl/GossipGirl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7XAGB7UHD;
 				INFOPLIST_FILE = "$(SRCROOT)/GossipGirl/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,9 +476,11 @@
 			baseConfigurationReference = 967A6B0A4C8EA6DF74FFCD0D /* Pods-GossipGirl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GossipGirl/GossipGirl.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7XAGB7UHD;
 				INFOPLIST_FILE = "$(SRCROOT)/GossipGirl/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

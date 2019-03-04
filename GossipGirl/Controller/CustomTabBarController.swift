@@ -16,9 +16,12 @@ class CustomTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
+        self.tabBar.tintColor = UIColor(red: 255/255, green: 116/255, blue: 140/255, alpha: 1)
+        
+    
         let gossipNavBarController = UINavigationController(rootViewController: MainController())
-        gossipNavBarController.tabBarItem.title = "gossip"
-        gossipNavBarController.tabBarItem.image = UIImage(named: "conversation")
+        gossipNavBarController.tabBarItem.title = "recent"
+        gossipNavBarController.tabBarItem.image = UIImage(named: "recent")
         
         
         
@@ -40,19 +43,21 @@ class CustomTabBarController: UITabBarController {
         
         
         
-        let settingsController = UINavigationController(rootViewController:
+        let settingController = UINavigationController(rootViewController:
             SettingController())
         
-        settingsController.tabBarItem.title = "settings"
+        settingController.tabBarItem.title = "settings"
         
-        settingsController.tabBarItem.image = UIImage(named: "settings")
+        settingController.tabBarItem.image = UIImage(named: "settings")
         
         
         
-        viewControllers = [gossipNavBarController, peopleTableController, profileController, settingsController]
+        viewControllers = [gossipNavBarController, peopleTableController, profileController, settingController]
         
         
     }
+    
+    
     
     
     private func navigationControllerWithTitle(title: String, imageName: String) -> UINavigationController {
