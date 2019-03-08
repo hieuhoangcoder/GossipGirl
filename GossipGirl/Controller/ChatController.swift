@@ -190,7 +190,7 @@ class ChatController: UICollectionViewController, UITextFieldDelegate, UICollect
             cell.profileImageView.isHidden = true
             cell.bubbleViewRightAnchor?.isActive = true
             cell.bubbleViewLeftAnchor?.isActive = false
-            cell.bubbleImageView.image = MessageCell.grayBubbleImage
+            cell.bubbleImageView.image = MessageCell.lightBubbleImage
             cell.bubbleImageView.tintColor = UIColor(red: 255/255, green: 243/255, blue: 245/255, alpha: 1)
             
             
@@ -201,7 +201,7 @@ class ChatController: UICollectionViewController, UITextFieldDelegate, UICollect
             cell.profileImageView.isHidden = false
             cell.bubbleViewRightAnchor?.isActive = false
             cell.bubbleViewLeftAnchor?.isActive = true
-            cell.bubbleImageView.image = MessageCell.blueBubbleImage
+            cell.bubbleImageView.image = MessageCell.salmonBubbleImage
             cell.bubbleImageView.tintColor = UIColor(red: 255/255, green: 116/255, blue: 140/255, alpha: 1)
             
             cell.textView.textColor = UIColor.white

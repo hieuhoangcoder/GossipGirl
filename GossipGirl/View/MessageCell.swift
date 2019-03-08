@@ -42,15 +42,15 @@ class MessageCell: UICollectionViewCell {
     
     
     
-    static let grayBubbleImage = UIImage(named: "graybubble")!.resizableImage(withCapInsets: UIEdgeInsets(top: 22, left: 26, bottom: 22, right: 26)).withRenderingMode(.alwaysTemplate)
+    static let lightBubbleImage = UIImage(named: "lightbubble")!.resizableImage(withCapInsets: UIEdgeInsets(top: 22, left: 26, bottom: 22, right: 26)).withRenderingMode(.alwaysTemplate)
     
-    static let blueBubbleImage = UIImage(named: "bluebubble")!.resizableImage(withCapInsets: UIEdgeInsets(top: 22, left: 26, bottom: 22, right: 26)).withRenderingMode(.alwaysTemplate)
+    static let salmonBubbleImage = UIImage(named: "salmonbubble")!.resizableImage(withCapInsets: UIEdgeInsets(top: 22, left: 26, bottom: 22, right: 26)).withRenderingMode(.alwaysTemplate)
     
     
     
     let bubbleImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = MessageCell.grayBubbleImage
+        imageView.image = MessageCell.lightBubbleImage
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
         
